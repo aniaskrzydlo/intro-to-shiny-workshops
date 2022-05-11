@@ -2,7 +2,7 @@ ui <- fluidPage(
   title = "Data explorator",
   
   # Application title
-  headerPanel("Iris Data Explorator"),
+  titlePanel("Iris Data Explorator"),
   
   # Sidebar Layout
   sidebarLayout(
@@ -17,7 +17,7 @@ ui <- fluidPage(
     
     # Main Panel
     mainPanel(
-      h1(textOutput("title")),
+      h3(textOutput("title")),
       plotOutput("plot")
     )
   )
