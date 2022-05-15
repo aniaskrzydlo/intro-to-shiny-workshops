@@ -9,3 +9,5 @@ runApp("app_03")
 runApp("app_04")
 
 runApp("app_05")
+
+runApp("app_06")
