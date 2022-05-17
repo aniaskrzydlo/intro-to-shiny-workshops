@@ -1,7 +1,7 @@
 library(ggplot2)
 
 server <- function(input, output, session) {
-  var_title <- reactive({
+  var_label <- reactive({
     gsub(".", " ", input$variable, fixed = TRUE)
   })
   
@@ -11,10 +11,10 @@ server <- function(input, output, session) {
       theme_classic() + 
       theme(axis.text = element_text(size = 15),
             axis.title = element_text(size = 20)) +
-      ylab(var_title())
+      ylab(var_label())
   })
   
   output$title <- renderText({
-    paste0(var_title(), " by Species")
+    paste0(var_label(), " by Species")
   })
 }
