@@ -1,8 +1,8 @@
 ui <- fluidPage(
-  title = "Data explorator",
+  title = "Data Explorer",
   
   # Application title
-  titlePanel("Iris Data Explorator"),
+  titlePanel("Iris Data Explorer"),
   
   # Sidebar Layout
   sidebarLayout(

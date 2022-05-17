@@ -1,12 +1,12 @@
 ui <- fluidPage(
-  title = "Data explorator",
+  title = "Data Explorer",
   
   tags$head(
     tags$link(href = "style.css", rel = "stylesheet", type = "text/css")
   ),
   
   # Application title
-  titlePanel("Iris Data Explorator"),
+  titlePanel("Iris Data Explorer"),
   
   # Sidebar Layout
   sidebarLayout(
